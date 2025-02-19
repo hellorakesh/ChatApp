@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tab Structure</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            margin: 20px;
+        }
+        .tabs {
+            display: flex;
+            border-bottom: 2px solid #ccc;
+        }
+        .tab {
+            padding: 10px 20px;
+            cursor: pointer;
+            border-bottom: 3px solid transparent;
+            font-weight: bold;
+        }
+        .tab.active {
+            border-bottom: 3px solid #007b5e;
+            color: #007b5e;
+        }
+        .content {
+            display: none;
+            padding: 20px;
+            background: #fff;
+            margin-top: 10px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .content.active {
+            display: block;
+        }
+        .policy-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .policy-item {
+            background: #f1f1f1;
+            padding: 10px 15px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Contents of the Pack</h2>
+
+    <div class="tabs">
+        <div class="tab active" data-tab="policies">43 Template Policies</div>
+        <div class="tab" data-tab="forms">38 Template Forms</div>
+        <div class="tab" data-tab="documents">27 Staff and Management Template Documents</div>
+        <div class="tab" data-tab="communication">8 Sample Parent Communication Documents</div>
+    </div>
+
+    <div class="content active" id="policies">
+        <h3>All 10 policies from our Essential Policies Pack plus 33 others</h3>
+        <div class="policy-list">
+            <div class="policy-item">Administering medication</div>
+            <div class="policy-item">Admissions and fees</div>
+            <div class="policy-item">Aggressive behaviour</div>
+            <div class="policy-item">Anti-bullying</div>
+            <div class="policy-item">Arrivals and departures</div>
+            <div class="policy-item">Childrens Behaviour</div>
+            <div class="policy-item">Child induction</div>
+            <div class="policy-item">Complaints</div>
+            <div class="policy-item">Emergency evacuation</div>
+            <div class="policy-item">Environmental policy</div>
+        </div>
+    </div>
+
+    <div class="content" id="forms">
+        <h3>Template Forms</h3>
+        <p>Various template forms for documentation and compliance.</p>
+    </div>
+
+    <div class="content" id="documents">
+        <h3>Staff and Management Documents</h3>
+        <p>Essential documents for staff and management.</p>
+    </div>
+
+    <div class="content" id="communication">
+        <h3>Parent Communication Documents</h3>
+        <p>Sample documents for communication with parents.</p>
+    </div>
+
+    <script>
+        $(document).ready(function(){
+            $(".tab").click(function(){
+                var tab_id = $(this).attr("data-tab");
+
+                $(".tab").removeClass("active");
+                $(".content").removeClass("active");
+
+                $(this).addClass("active");
+                $("#" + tab_id).addClass("active");
+            });
+        });
+    </script>
+
+</body>
+</html>
