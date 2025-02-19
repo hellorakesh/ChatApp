@@ -26,11 +26,28 @@ section{
 
 
 
+.section-title{
+    font-size: 48px;
+    font-weight: 600;
+    color: #000000;
+}
+.section-desc{
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 43px;
+}
 
 
-
-
-
+.ft-card h5{
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 43px;
+}
+.ft-card p{
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 43px;
+}
 
 
 /* footer css start */
