@@ -19,7 +19,7 @@ const LandingPage = () => {
       <section className="hero-banner">
         <div className="container">
             <div className="row">
-                <div className="col-12">
+                <div className="col-12 col-md-10 mx-auto" >
                 <div className="d-flex align-items-center justify-content-center gap-3">
                   <div className="first-col">
                   <img src={logo} alt="logo" className="img-fluid logo-img" />
@@ -33,12 +33,12 @@ const LandingPage = () => {
        
         <p className="text-center banner-desc">Random Chat is an easy and anonymous way to meet new people online.</p>
        
-        <div className="d-flex justify-content-center gap-3">
+        <div className="d-flex justify-content-center gap-3 userstate">
           <span className="text-danger">📶 22,966 <span className="inner-content">Online</span> </span>
           <span className="text-warning">👥 2,974,615   <span className="inner-content">Joined</span></span>
         </div>
-      <div className="d-flex flex-column align-items-center w-100">
-      <div className="d-flex flex-column align-items-center w-100">
+      <div className="d-flex flex-column w-100">
+      <div className="d-flex  align-items-center w-100">
         <input type="text" className="form-control" placeholder="Enter a username" />
         <button className="join-button" onClick={() => navigate("/chat")}>
         Join Chat
@@ -69,7 +69,7 @@ const LandingPage = () => {
             no storing any of your data or messages.</span> ALL your data vanishes when you leave. We do  <span className="text-danger"> NOT </span>sell your data we do <span className="text-danger"> NOT </span> sell you.
             </p>
           </div>
-          <div className="col-md-6">
+          <div className="col-md-6 text-center">
             <img src={whatImage} alt="What We Do" className="img-fluid" />
           </div>
         </div>
@@ -80,7 +80,7 @@ const LandingPage = () => {
       <section className="why-section bg-color">
       <div className="container">
        <div className="row align-items-center">
-          <div className="col-md-6">
+          <div className="col-md-6 text-center">
            <img src={whyImage} alt="Why We’re Different" className="img-fluid" /> 
           </div>
           <div className="col-md-6">
