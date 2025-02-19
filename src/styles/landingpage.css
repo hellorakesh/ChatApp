@@ -1,0 +1,52 @@
+section{
+    padding: 70px 0;
+}
+.bg-color{
+    background-color: #F4F7FA;
+}
+.hero-banner{
+   
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 165px 0;
+    background-color: #F4F7FA;
+}
+.banner-title{
+    font-size: 84px;
+    font-weight: 600;
+    color: #B73010;
+}
+.banner-title span{
+    color: #000000;
+}
+.banner-desc {
+    font-size: 26px;
+}
+
+
+
+
+
+
+
+
+
+
+/* footer css start */
+.footer-top{
+    background-color: #F4F7FA;
+    padding-top: 90px;
+    padding-bottom: 60px;
+}
+.footer-bottom{
+    background-color: #B73010;
+    padding: 35px 0;
+}
+
+footer p{
+    margin-bottom: 0;
+    font-size: 24px;
+    font-weight: 500;
+    color: #fff;
+}
