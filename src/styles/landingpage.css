@@ -5,7 +5,7 @@ section{
     background-color: #F4F7FA;
 }
 .hero-banner{
-   
+   background-image: url(../hero.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -14,6 +14,9 @@ section{
 }
 .logo-img {
     width: 228px;
+}
+.userstate{
+    align-items: center;
 }
 .banner-title{
     font-size: 84px;
@@ -31,11 +34,15 @@ section{
 }
 .userstate{
     margin-bottom: 50px;
+    gap: 60px;
 }
-.userstate span{
+.userstate span {
     font-size: 32px;
     font-weight: 500;
-    color: #B73010;
+    color: #B73010; 
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 .userstate span span.inner-content{
     color: #000000;
@@ -48,6 +55,7 @@ input.form-control {
     padding: 38px;
     border-radius: 20px;
     margin-right: 20px;
+    border: 1px solid #B73010;
 }
 input.form-control.w-50 {
     font-size: 32px;
@@ -65,10 +73,19 @@ button.join-button {
     border-radius: 20px;
     font-size: 32px;
     height: 100%;
-    padding: 32px  30px;
-    width: 240px;
+    padding: 29px 30px;
+    width: 400px;
     letter-spacing: -4px;
+    align-items: center;
+    display: flex;
+    gap: 30px;
 }
+.form-control.interst {
+    border-color: #B7B7B7;
+    margin-top: 30px;
+    color: #000;
+}
+
 input#reserve , input#stealth {
     font-size: 50px;
     width: 33px;
@@ -90,7 +107,9 @@ input#reserve , input#stealth {
     font-weight: 500;
     line-height: 43px;
 }
-
+.text-center.ft-section {
+    padding: 150px 0 230px;
+}
 
 .ft-card h5{
     font-size: 35px;
@@ -129,4 +148,166 @@ footer p{
     font-size: 24px;
     font-weight: 500;
     color: #fff;
+}
+
+
+@media screen and (max-width: 1399px) {
+    .banner-title {
+        font-size: 68px;
+    }
+    .logo-img {
+        width: 138px;
+    }
+    .banner-desc, label {
+        font-size: 22px;
+    }
+    .userstate span ,button.join-button {
+        font-size: 28px;
+    }
+    input.form-control {
+        font-size: 22px;
+    }
+    .section-desc , .ft-card p,footer p{
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .section-title {
+        font-size: 38px;
+    }
+    .ft-card img {
+        width: auto;
+        height: 143px;
+    }
+    .ft-card h5 {
+        font-size: 28px;
+        line-height: 40px;
+    }
+    .text-center.ft-section {
+        padding: 150px 0 150px;
+    }
+    .footer-bottom {
+        padding: 20px 0;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .hero-banner {
+        padding: 105px 0;
+    }
+    .banner-title {
+        font-size: 48px;
+    }
+    .logo-img {
+        width: 88px;
+    }
+    .banner-desc, label {
+        font-size: 17px;
+        margin: 20px 0;
+    }
+    .userstate span, button.join-button {
+        font-size: 22px;
+        gap: 9px;
+    }
+    .icon-img {
+        width: auto;
+        height: 30px;
+    }
+    .userstate span, button.join-button {
+        font-size: 18px;
+    }
+    .button-icon {
+        width: auto;
+        height: 30px;
+    }
+    button.join-button {
+        width: 300px;
+        letter-spacing: -1px;
+    }
+    input.form-control {
+        padding: 27px;
+    }
+    input#reserve, input#stealth {
+        width: 15px;
+        height: 15px;
+        top: 1px;
+    }
+    .form-control.interst {
+        margin-top: 0;
+    }
+    .sm-text{
+        text-align: center;
+        margin-top: 30px;
+    }
+    .text-center.ft-section {
+        padding: 80px 0;
+    }
+    .ft-card img {
+        height: 100px;
+    }
+    .ft-card h5 {
+        font-size: 24px;
+        line-height: 34px;
+    }
+    .ft-card p {
+        font-size: 16px;
+        line-height: 26px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+   .ft-section .col-md-4{
+    margin-bottom: 30px;
+   }
+   .ft-section .col-md-4:last-child{
+    margin-bottom: 0px;
+   }
+}
+
+@media screen and (max-width: 575px) {
+    .hero-banner {
+        padding: 55px 0;
+    }
+    .banner-title {
+        font-size: 35px;
+    }
+    .logo-img {
+        width: 68px;
+    }
+    .banner-desc, label {
+        font-size: 16px;
+    }
+    .userstate {
+        margin-bottom: 30px;
+        gap: 20px;
+    }
+    .form-wrap{
+        flex-wrap: wrap;
+    }
+    button.join-button {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    input.form-control {
+        padding: 27px;
+        margin-right: 0;
+    }
+    section {
+        padding: 50px 0;
+    }
+    .section-title {
+        font-size: 35px;
+    }
+    .section-desc, .ft-card p, footer p {
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .text-center.ft-section {
+        padding: 50px 0;
+    }
+    .footer-top {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
 }

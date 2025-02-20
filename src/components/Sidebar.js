@@ -2,12 +2,14 @@ import React from "react";
 import { FaKeyboard, FaVolumeMute, FaVolumeUp } from "react-icons/fa";
 import "../styles/styles.css";
 import logo from "../chat-logo.png";
+import { useNavigate } from "react-router-dom";
 
 const Sidebar = ({ muted, setMuted, away, setAway }) => {
+   const navigate = useNavigate();
   return (
     <div className="sidebar">
-      <div className="logo"><img src={logo} alt="Logo" width="62" /></div>
-      <hr></hr>
+      <div className="logo" onClick={() => navigate("/")}><img src={logo} alt="Logo" width="62" /></div>
+      <hr className="my-4"></hr>
       <button className="button" onClick={() => setAway(!away)}>
         <FaKeyboard className="me-2" /> {away ? "Back Online" : "Away from Keyboard"}
       </button>
